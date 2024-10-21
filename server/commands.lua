@@ -23,5 +23,5 @@ function db.createCharInfo(data)
 end
 
 lib.callback.register('cp:database:selectCharInfo', function (id)
-    return MySQL.prepare.await('SELECT `title`, `description` FROM `mdt_incidents` WHERE `id` = ?', { id })
+    return MySQL.prepare.await('SELECT `charinfo`, `tattosinfo` FROM `cp_charinfo` WHERE `id` = ?', { id })
 end)
