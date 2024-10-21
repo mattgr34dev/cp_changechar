@@ -1,5 +1,3 @@
-
-
 local function setupCharMenu()
   local dialog = lib.inputDialog('Персонаж', {
     {type = 'input', label = 'Описание персонажа', description = 'Опишите своего персонажа', required = true, min = 4, max = 16},
